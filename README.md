@@ -1,3 +1,8 @@
+<div style="max-width: 20%; display: inline-block;">
+  <img src="https://img.shields.io/badge/⚡Run%20Status-Yes-success" alt="Works in Editor" style="width: 20%; height: auto;">
+</div>
+
+
 # flutter_map
 
 A new Flutter project.
