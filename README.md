@@ -1,7 +1,8 @@
 <div style="max-width: 20%; display: inline-block;">
   <img src="https://img.shields.io/badge/⚡Run%20Status-Yes-success" alt="Works in Editor" style="width: 20%; height: auto;">
 </div>
---------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+
 Flutter Maps Template
 
 This project is a **Flutter template for Google Maps** that includes different map features 
@@ -48,7 +49,7 @@ Video Output :-
 
 https://github.com/user-attachments/assets/e739b4d5-ebc3-4032-81f8-9f16d1a001e7
 
-=====================================================================================
+===================================================================
 
 
 Upcoming Features................................
