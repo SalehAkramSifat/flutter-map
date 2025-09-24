@@ -10,9 +10,6 @@ Each screen demonstrates a specific functionality of Google Maps.
 
 ## 🚀 Features
 - General Map View
-- Zoom & Pan
-- Traffic Layer
-- Custom Markers
 - Current Location
 - Search Places
 - Routes & Navigation
