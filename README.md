@@ -49,10 +49,7 @@ Users can tap or long-press on the map to select a location, which will be marke
 ---
 
 ## 🔮 Upcoming Features
-- Zoom & Pan  
-- Traffic Layer  
-- Custom Markers  
 - Current Location  
-- Search Places  
+- Search Places
 - Routes & Navigation  
 - Distance & Duration Calculation  
