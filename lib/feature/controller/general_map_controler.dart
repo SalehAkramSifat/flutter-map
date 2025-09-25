@@ -80,19 +80,14 @@ class GeneralMapController extends GetxController {
   /// Change zoom level
   Future<void> changeZoom(double zoom) async {
     currentZoom.value = zoom;
-    await mapController?.animateCamera(
-      CameraUpdate.zoomTo(zoom),
-    );
+    await mapController?.animateCamera(CameraUpdate.zoomTo(zoom));
   }
 
   /// Move camera to a given location
   Future<void> moveTo(LatLng latLng, {double? zoom}) async {
     await mapController?.animateCamera(
       CameraUpdate.newCameraPosition(
-        CameraPosition(
-          target: latLng,
-          zoom: zoom ?? currentZoom.value,
-        ),
+        CameraPosition(target: latLng, zoom: zoom ?? currentZoom.value),
       ),
     );
   }
@@ -164,7 +159,7 @@ class GeneralMapController extends GetxController {
       Polygon(
         polygonId: PolygonId("polygon_${polygons.length}"),
         points: points,
-        fillColor: Colors.green.withOpacity(0.2),
+        fillColor: Colors.green,
         strokeColor: Colors.green,
         strokeWidth: 2,
       ),

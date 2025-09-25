@@ -1,6 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_map/core/common/custom_text.dart';
 import 'package:flutter_map/feature/controller/general_map_controler.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
@@ -13,6 +14,7 @@ class GeneralMapScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(title: CustomText(text: "Genarel Map")),
       backgroundColor: Colors.white,
       body: SafeArea(
         child: ClipRRect(

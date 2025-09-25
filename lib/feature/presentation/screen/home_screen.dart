@@ -25,10 +25,13 @@ class HomeScreen extends StatelessWidget {
                 child: CustomOptionCard(title: 'General Map'),
               ),
               SizedBox(height: 15.h),
-              CustomOptionCard(title: 'General Map'),
+              GestureDetector(
+                onTap: () {
+                  Get.toNamed(AppRoute.mapRouteSecreen);
+                },
+                child: CustomOptionCard(title: 'Map Route'),
+              ),
               SizedBox(height: 15.h),
-
-              CustomOptionCard(title: 'General Map')
             ],
           ),
         ),
