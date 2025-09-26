@@ -8,10 +8,12 @@ class RouteMapController extends GetxController {
   final fromLocationController = TextEditingController();
   final toLocationController = TextEditingController();
 
-  var fromLat = 0.0.obs;
-  var fromLng = 0.0.obs;
-  var toLat = 0.0.obs;
-  var toLng = 0.0.obs;
+  var fromLat = 23.8103.obs;
+  var fromLng = 90.4125.obs;
+
+  var toLat = 16.8409.obs;
+  var toLng = 96.1735.obs;
+
   var polylines = <Polyline>{}.obs;
   var markers = <Marker>{}.obs;
   var isLocationLoading = false.obs;
@@ -80,7 +82,8 @@ class RouteMapController extends GetxController {
       if (response.statusCode == 200) {
         final Map<String, dynamic> data = json.decode(response.body);
         if (data['routes'].isNotEmpty) {
-          final String encodedPolyline = data['routes'][0]['overview_polyline']['points'];
+          final String encodedPolyline =
+              data['routes'][0]['overview_polyline']['points'];
           List<LatLng> polyPoints = _decodePolyline(encodedPolyline);
           _showRoute(polyPoints);
         } else {
